@@ -1,0 +1,37 @@
+import numpy as np
+import pandas as pd
+import statistics as stat
+#
+#
+def calculate_stats(age_array):
+    mean_val = np.mean(df['age'])
+    median_val = np.median(df['age'])
+    (values, count) = np.unique(df['age'], return_counts=True)
+    ind = np.argmax(count)
+    mode_val = values[ind]
+    var_val = np.var(df.age)
+    std_dev = np.std(df['age'], ddof=1)
+    std_err = np.std(df['age'], ddof=1) / np.sqrt(len(df['age']))
+    print('Mean = {}'.format(mean_val))
+    print('Mode = {}'.format(mode_val))
+    print('Median = {}'.format(median_val))
+    print('Variance = {}'.format(var_val))
+    print('Std. Dev = {}'.format(std_dev))
+    print('Std. Err = {}'.format(std_err))
+# Initialize age data
+brady_array = []
+df = pd.DataFrame(brady_array)
+df['names'] = ['Greg', 'Marcia', 'Peter', 'Jan', 'Bobby', 'Cindy', 'Oliver']
+df['age'] = [14, 12, 11, 10, 8, 6, 8]
+print('Stats based on initial values....')
+calculate_stats(df['age'])
+print('..................................')
+#Remove Oliver and add Jessica
+df['names'] = ['Greg', 'Marcia', 'Peter', 'Jan', 'Bobby', 'Cindy']
+df['age'] = [14, 12, 11, 10, 8, 6]
+print('Values after removing Oliver \n')
+calculate_stats(df['age'])
+df['names'] = ['Greg', 'Marcia', 'Peter', 'Jan', 'Bobby', 'Cindy', 'Jessica']
+df['age'] = [14, 12, 11, 10, 8, 6, 1]
+print('Values after adding Jessica \n')
+calculate_stats(df['age'])
