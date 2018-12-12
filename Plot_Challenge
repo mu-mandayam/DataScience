@@ -1,0 +1,34 @@
+#
+# This is a sample program for the Data Visualization challenge
+#
+import pandas as pd
+import numpy as np
+import statistics
+import matplotlib.pyplot as plt
+#
+data_set = pd.DataFrame()
+#
+# Downloaded the data from the Housing Affordability Data System from:
+# https://www.huduser.gov/portal/datasets/hads/hads.html
+# 2013 ASCII zip file
+#
+# The file has more than 65,000 rows and 99 columns
+#
+# Limiting my challenge to th first 100 rows
+#
+max_rows = 100
+data_set = pd.read_csv('thads2013n.txt', nrows=max_rows)
+#
+# The label FMR is the Rent in $
+# The label LMED is the Median Income in $
+#
+# Trying to plot the values of FMR versus LMED. My x-axis isn LMED (or Salary) and my y-axis is FMR (or Rent)
+#
+my_list = data_set['FMR']
+plot_array = pd.DataFrame(data_set['LMED'], index=(my_list))
+#
+plt.ylim(45000, 50000)
+plt.xlim(10120,10150)
+plt.ylabel('Salary Data')
+plt.xlabel('Rent in $')
+plt.plot(plot_array)
