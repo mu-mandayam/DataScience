@@ -14,21 +14,30 @@ data_set = pd.DataFrame()
 #
 # The file has more than 65,000 rows and 99 columns
 #
-# Limiting my challenge to th first 100 rows
-#
-max_rows = 100
-data_set = pd.read_csv('thads2013n.txt', nrows=max_rows)
+# Tried limiting my challenge to the first 100 rows
+# max_rows = 100
+data_set = pd.read_csv('thads2013n.txt')
 #
 # The label FMR is the Rent in $
 # The label LMED is the Median Income in $
 #
-# Trying to plot the values of FMR versus LMED. My x-axis isn LMED (or Salary) and my y-axis is FMR (or Rent)
+# Trying to plot the values of FMR versus LMED for a chosen region, for e.g REGION==2 here. 
+# My x-axis is LMED (or Salary) and my y-axis is FMR (or Rent)
 #
-my_list = data_set['FMR']
-plot_array = pd.DataFrame(data_set['LMED'], index=(my_list))
+# Sublist with data for region 2 only
+# The list "short_list" will have a list of TRUE or FALSE flags depending on the REGION value
 #
-plt.ylim(45000, 50000)
-plt.xlim(10120,10150)
-plt.ylabel('Salary Data')
-plt.xlabel('Rent in $')
-plt.plot(plot_array)
+short_list = data_set['REGION']=="'2'" 
+#
+# From "short_list" we create "regional_list" that will have data for a particular, chosen REGION only
+#
+regional_list = data_set[short_list]
+#
+# From the regional_list we choose two columns: LMED that has the median income and FMR the rent paid
+#
+lmed_list = regional_list['LMED']
+fmr_list = regional_list['FMR']
+#
+# We plot the Rent paid against the Median income to see if there is any correlation
+#
+plt.scatter(lmed_list, fmr_list)
