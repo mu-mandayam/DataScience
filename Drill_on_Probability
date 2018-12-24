@@ -1,0 +1,8 @@
+1. HTHH = 0.5 * 0.5 * 0.5 * 0.5 = 0.0625 or 1/2 x 1/2 x 1/2 x 1/2 = 1/16
+           Isn’t all 4 the same probability? HTHH, TTHH and HHHH? Because all 4 will be the same formula of (1/2) ** 4?
+2. 21 men and 24 women: Probability of choosing a man = 21/45.
+           Probability of choosing NOT a man = Probability of choosing a woman = 1 - 21/45 = 24/25
+3. Probability Bernice will travel by plane next year = 10% or 0.1
+           Probability of a place crash next year = 0.005% or 0.005/100 = 0.00005
+           Probability of Bernice traveling by a plane that will crash = 0.1 x 0.00005 = 0.000005 or 0.0005%
+4. The goal of the study and the conclusion are orthogonal. 
