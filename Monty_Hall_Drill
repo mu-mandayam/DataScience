@@ -8,3 +8,16 @@ P(D3) = Probability choosing Door #3
 Initially, before choosing any doors: P(D1) = P(D2) = P(D3) = 1/3
 Once you choose, say, Door #1, probability to pick Doors #2 or #3 is = 1/2
 
+Host opens Door #3
+IF no prize/car behind Door #3 THEN:
+  Probability that prize/car is behind Door #1 or #2 is = 2/3
+This can be explained like this:
+
+Let's say the player picks Door #1 AND the Host opens Door #3. The following are the scenarios
+----------------------------------------------------------
+Door #1 |  Door #2 |  Door #3|   No Switch|  Switches Door
+--------|----------|---------|------------|---------------
+Car     |  Goat    |  Goat   |   WIN      |   LOSE
+Goat    |  Car     |  Goat   |   LOSE     |   WIN
+Goat    |  Goat    |  Car    |   LOSE     |   WIN
+----------------------------------------------------------
