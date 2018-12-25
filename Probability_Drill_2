@@ -10,5 +10,5 @@ Misclassify the person = ???
 1. Positive = 0.98 * 0.005 = 0.0049
 2. Correctly diagnose = P(Infected | Test is Positive)
                       = P(Test is Positive | Infected) * P(Infected) / [P(Infected) * P(Positive Test | Infected) + 
-                                                                                                    P(Not Positive) * P(Not infected | Not Positive)]
+                                                         P(Not Positive) * P(Not infected | Not Positive)]
                        = 0.1 * 0.005 / [0.005 * 0.9 + 0.02 * 0.1]
