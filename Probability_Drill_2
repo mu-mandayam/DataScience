@@ -1,0 +1,14 @@
+Drill: Lesson 2.6 on Bayes Rule:
+        
+Probability that the test is positive = 98% or 0.98
+Probability that a person is infected = 0.5% or 0.005
+90% Probability of a False Negative or 10% False Positive
+Probability of correctly diagnosing a sufferer = P(That the person is infected given false negative)
+Probability of correctly identifying a non-sufferer = P(That the person is not infected given false positive)
+Misclassify the person = ???   
+
+1. Positive = 0.98 * 0.005 = 0.0049
+2. Correctly diagnose = P(Infected | Test is Positive)
+                      = P(Test is Positive | Infected) * P(Infected) / [P(Infected) * P(Positive Test | Infected) + 
+                                                                                                    P(Not Positive) * P(Not infected | Not Positive)]
+                       = 0.1 * 0.005 / [0.005 * 0.9 + 0.02 * 0.1]
