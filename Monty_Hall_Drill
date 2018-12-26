@@ -11,6 +11,7 @@ Once you choose, say, Door #1, probability to pick Doors #2 or #3 is = 1/2
 Host opens Door #3
 IF no prize/car behind Door #3 THEN:
   Probability that prize/car is behind Door #1 or #2 is = 2/3
+
 This can be explained like this:
 
 Let's say the player picks Door #1 AND the Host opens Door #3. The following are the scenarios
@@ -21,3 +22,5 @@ Car     |  Goat    |  Goat   |   WIN      |   LOSE
 Goat    |  Car     |  Goat   |   LOSE     |   WIN
 Goat    |  Goat    |  Car    |   LOSE     |   WIN
 ----------------------------------------------------------
+
+Formula to calculate the probability mathematically?
