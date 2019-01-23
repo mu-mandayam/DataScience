@@ -1,0 +1,38 @@
+Data Science Boot Camp:
+Unit #1, Lesson #1: Drill
+
+Below we have a series of questions for you to translate into a technical plan. For each question, describe how you would make it testable and translate it from a general question into something statistically rigorous. Write your answers down in a shareable document and submit the link below.
+
+1.	You work at an e-commerce company that sells three goods: widgets, doodads, and fizzbangs. The head of advertising asks you which they should feature in their new advertising campaign. You have data on individual visitors' sessions (activity on a website, pageviews, and purchases), as well as whether or not those users converted from an advertisement for that session. You also have the cost and price information for the goods.
+
+Create a “Goods” table that has:
+a.	Goods ID
+b.	Goods Description
+c.	Cost of Good
+d.	Sell Price of Good
+
+Create a “Session” table that has:
+a.	Session ID
+b.	Buyer ID
+c.	Buyer Name
+d.	Activity ID (links to an Activity table that has one entry per activity or items browsed). Activity is 0 for website, 1 for pageviews and 2 for converted from ad
+
+Create a “Items_Bought” table with a link to Session ID
+
+From the “Items_Bought” table find out the Activity with which the Buyer bought the good
+
+2.	You work at a web design company that offers to build websites for clients. Signups have slowed, and you are tasked with finding out why. The onboarding funnel has three steps: email and password signup, plan choice, and payment. On a user level you have information on what steps they have completed as well as timestamps for all of those events for the past 3 years. You also have information on marketing spend on a weekly level.
+
+Keep a user session table to track their activity by tracking the plans they browsed, what plans were bought. Compare this with the weekly marketing spend with a weekly revenue trend on individual plans bought. Additional marketing spend for the plans that are weak in sales may be necessary.
+3.	You work at a hotel website and currently the website ranks search results by price. For simplicity's sake, let's say it's a website for one city with 100 hotels. You are tasked with proposing a better ranking system. You have session information, price information for the hotels, and whether each hotel is currently available.
+
+To the ranking system add other parameters such as room cleanliness, food quality in restaurant, complimentary items in the room (e.g. free water bottles), choice of cable TV channels, availability of Netflix or Hulu etc.
+
+Based on the user sessions store the ranking and run an analysis of a rank based.
+
+4.	You work at a social network, and the management is worried about churn (users stopping using the product). You are tasked with finding out if their churn is atypical. You have three years of data for users with an entry for every time they've logged in, including the timestamp and length of session.
+
+Conduct an analysis of the length of session. See if the distribution is normal or atypical. Conduct a per user analysis of the length of their session and see if there is a downward trend in the length of the sessions.
+
+Discuss your answers to each of these questions with your mentor during your next session.
+
