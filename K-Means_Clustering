@@ -1,0 +1,1 @@
+When I increase K in K-Means and calculate the silhouette numbers they start to drop dramatically after 3 clusters. This is also corroborated by the elbow curve.
